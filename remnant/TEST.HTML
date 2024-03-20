@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Team</title>
+    <style>
+        .team-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .team-button:focus {
+            outline: none;
+        }
+
+        /* Different colors for each button */
+        .team-carlos {
+            background-color: #ff6347;
+        }
+
+        .team-yvonne {
+            background-color: #ffa500;
+        }
+
+        .team-nick {
+            background-color: #4169e1;
+        }
+
+        .team-esther {
+            background-color: #20b2aa;
+        }
+
+        .team-bami {
+            background-color: #800080;
+        }
+
+        .team-gregory {
+            background-color: #4682b4;
+        }
+    </style>
+</head>
+
+<body>q
+    <button class="team-button team-carlos" onclick="chooseTeam('Carlos')">Team Carlos</button>
+    <button class="team-button team-yvonne" onclick="chooseTeam('Yvonne')">Team Yvonne</button>
+    <button class="team-button team-nick" onclick="chooseTeam('Nick')">Team Nick</button>
+    <button class="team-button team-esther" onclick="chooseTeam('Esther')">Team Esther</button>
+    <button class="team-button team-bami" onclick="chooseTeam('Bami')">Team Bami</button>
+    <button class="team-button team-gregory" onclick="chooseTeam('Gregory')">Team Gregory</button>
+
+    <script>
+        function chooseTeam(teamName) {
+            localStorage.setItem('selectedTeam', teamName);
+            window.location.href = 'nextpage.html';
+        }
+    </script>
+</body>
+
+</html>
