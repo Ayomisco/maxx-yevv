@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MAXX YEVV</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/maxx.png" type="image/x-icon">
+
+
+<style>
+
+     .button-container {
+    text-align: center; /* Center align the buttons */
+  }
+    .team-button {
+        display: inline-block;
+        width: 150px;
+        /* Set a fixed width for the buttons */
+        height: 60px;
+        /* Set a fixed height for the buttons */
+        padding: 10px;
+        margin: 10px auto;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .team-button:focus {
+        outline: none;
+    }
+
+    /* Different colors for each button */
+    .team-carlos {
+        background-color: #ff6347;
+    }
+
+    .team-yvonne {
+        background-color: #ffa500;
+    }
+
+    .team-nick {
+        background-color: #4169e1;
+    }
+
+    .team-esther {
+        background-color: #20b2aa;
+    }
+
+    .team-bami {
+        background-color: #800080;
+    }
+
+    .team-gregory {
+        background-color: #4682b4;
+    }
+
+    /* Media queries for responsive design */
+    @media (max-width: 768px) {
+        .team-button {
+            width: 200px;
+            height: 70px;
+            padding: 8px;
+            margin: 8px auto;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .team-button {
+            width: 200px;
+            height: 100px;
+            padding: 6px;
+            margin: 6px auto;
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+    <main>
+
+
+
+  
+
+        <section class="ticket-section1 section-padding">
+            <div class="section-overlay"></div>
+
+            <h1 class="text-white mb-5" style="color: white; text-align: center;">Pick a colour</h1>
+            <div>
+                <div class="container button-container">
+                    <div class="row">
+
+                    <button class="team-button team-carlos" onclick="chooseTeam('Carlos')"></button>
+                    <button class="team-button team-yvonne" onclick="chooseTeam('Yvonne')"></button>
+                    <button class="team-button team-nick" onclick="chooseTeam('Nick')"></button>
+                    <button class="team-button team-esther" onclick="chooseTeam('Esther')"></button>
+                    <button class="team-button team-bami" onclick="chooseTeam('Bami')"></button>
+                    <button class="team-button team-gregory" onclick="chooseTeam('Gregory')"></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class=" col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2024 Maxxconnection</p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ <script>
+    function chooseTeam(teamName) {
+        localStorage.setItem('selectedTeam', teamName);
+        window.location.href = 'result.html';
+    }
+</script>
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

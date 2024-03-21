@@ -332,7 +332,7 @@ strong {
   VIDEO              
 -----------------------------------------*/
 .video-wrap {
-  z-index: -100;
+  z-index: -100;/*  */
 }
 
 .custom-video {
@@ -552,6 +552,14 @@ strong {
 -----------------------------------------*/
 .ticket-section {
   background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 130px;
+}
+
+.ticket-section1 {
+  background-image: url('../images/Quote.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
